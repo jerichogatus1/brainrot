@@ -1,0 +1,58 @@
+export const ACHIEVEMENTS = [
+  {
+    id: 'button-chaser',
+    title: 'Professional Button Chaser',
+    description: 'Survive the first five pranks without blinking.',
+    icon: '🖱️',
+    requires: (stats) => stats.levelsCompleted >= 5,
+  },
+  {
+    id: 'victim',
+    title: 'Victim',
+    description: 'Get fooled by the first fake popup.',
+    icon: '😵',
+    requires: (stats) => stats.levelsCompleted >= 1,
+  },
+  {
+    id: 'fell-for-it',
+    title: 'You Fell For It',
+    description: 'Complete a fake loading screen.',
+    icon: '🧠',
+    requires: (stats) => stats.levelsCompleted >= 3,
+  },
+  {
+    id: 'brainrot',
+    title: 'Certified Brainrot',
+    description: 'Survive ten levels of nonsense.',
+    icon: '🌀',
+    requires: (stats) => stats.levelsCompleted >= 10,
+  },
+  {
+    id: 'touch-grass',
+    title: 'Touch Grass',
+    description: 'Escape the meme storm for a full minute.',
+    icon: '🌿',
+    requires: (stats) => stats.speedrunSeconds >= 60,
+  },
+  {
+    id: 'iq',
+    title: '404 IQ',
+    description: 'Reach the later half of the prank ladder.',
+    icon: '💀',
+    requires: (stats) => stats.levelsCompleted >= 15,
+  },
+  {
+    id: 'speedrunner',
+    title: 'Speedrunner',
+    description: 'Finish the game in under 90 seconds.',
+    icon: '⚡',
+    requires: (stats) => stats.speedrunSeconds <= 90,
+  },
+  {
+    id: 'meme-lord',
+    title: 'Meme Lord',
+    description: 'Trigger the secret developer menu.',
+    icon: '👑',
+    requires: (stats) => stats.secretMenuUses >= 1,
+  },
+];
